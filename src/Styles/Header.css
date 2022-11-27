@@ -20,7 +20,7 @@
   left: 0%;
   display: block;
   transition-duration: 0.2s;
-
+  background-color: rgba(0, 0, 0, 0.745);
 }
 
 .anchor__component {
@@ -35,7 +35,7 @@
   font-size: 2rem;
   text-decoration: none;
   text-indent: 3%;
-  color: gray;
+  color: white;
   font-size: 2rem;
   font-weight: 700;
   margin-top: 50%;
