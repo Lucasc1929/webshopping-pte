@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/projetopte/static/css/main.ebc3d124.css",
+    "main.js": "/projetopte/static/js/main.f6ad7274.js",
+    "index.html": "/projetopte/index.html",
+    "main.ebc3d124.css.map": "/projetopte/static/css/main.ebc3d124.css.map",
+    "main.f6ad7274.js.map": "/projetopte/static/js/main.f6ad7274.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebc3d124.css",
+    "static/js/main.f6ad7274.js"
+  ]
+}
