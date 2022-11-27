@@ -36,7 +36,7 @@ function Products() {
     } catch (err) {
     }
     fetchData();
-    navigate("/");
+    navigate("/webshopping-pte");
     const result = delProduct.json();
     return;
   };

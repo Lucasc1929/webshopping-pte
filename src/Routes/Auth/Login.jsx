@@ -41,7 +41,7 @@ function Login() {
     } catch (err) {}
     result = await result.json();
     alert(result.message + "!");
-    navigate("/");
+    navigate("/webshopping-pte");
   };
 
   const errorForm = (err) => {

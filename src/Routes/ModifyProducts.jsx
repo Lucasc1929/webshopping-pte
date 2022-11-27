@@ -45,7 +45,7 @@ function ModifyProducts() {
     }
     const result = await fetchData.json();
     alert(result);
-    navigate("/");
+    navigate("/webshopping-pte");
 
   };
   return (

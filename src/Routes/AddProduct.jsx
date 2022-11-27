@@ -35,7 +35,7 @@ function AddProduct() {
           description: description,
         }),
       });
-      navigate("/");
+      navigate("/webshopping-pte");
     } catch (err) {
     }
     result = await result.json();
