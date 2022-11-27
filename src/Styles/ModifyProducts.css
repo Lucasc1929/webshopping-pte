@@ -1,0 +1,76 @@
+.ProductForm > input[type="text"] {
+  padding: 3%;
+  font-size: 2rem;
+  margin: 2rem;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.429);
+}
+
+.ProductForm > .submit__Button {
+  display: block;
+  margin: auto;
+  font-size: 2.5rem;
+  cursor: pointer;
+  content: "HI";
+  border: none;
+  padding: 3px 3rem;
+  background-color: skyblue;
+  width: fit-content;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+}
+
+.ProductForm > .submit__Button:hover {
+  animation: bright 6s ease infinite;
+  cursor: pointer;
+  content: "HI";
+}
+
+@keyframes bright {
+  0% {
+    background-color: skyblue;
+    box-shadow: 15px 15px 30px skyblue;
+  }
+  30% {
+    background-color: lime;
+    box-shadow: 15px 15px 30px yellow;
+  }
+  50% {
+    background-color: limegreen;
+    box-shadow: 15px 15px 30px limegreen;
+    color: black;
+  }
+  70% {
+    background-color: green;
+    box-shadow: 15px 15px 30px green;
+  }
+  100% {
+    background-color: skyblue;
+    box-shadow: 15px 15px 30px skyblue;
+  }
+}
+
+.ProductForm {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 720px) {
+  .ProductForm > input[type="text"] {
+    width: 100%;
+    margin: 0.75em auto;
+  }
+}
+
+@media (max-width: 1600px) {
+  .ProductForm {
+    width: 60%;
+  }
+}

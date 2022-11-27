@@ -1,0 +1,96 @@
+.auth-login__form {
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  padding: 1rem 1rem 7rem 1rem;
+  margin: auto;
+  border-radius: 10px;
+  width: fit-content;
+  width: 70%;
+  margin-bottom: 7rem;
+}
+
+.AuthForm > input[type='text'], .AuthForm > input[type='password'] {
+  padding: 3%;
+  font-size: 2rem;
+  margin: 2rem;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.429);
+}
+
+.submit-login__button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  font-size: 2rem;
+  border: none;
+  margin-top: .5em;
+  border-radius: 15px;
+  transform: translate(-50%);
+  background-color: rgb(67, 158, 255);
+  padding: 2rem 5rem;
+  margin-bottom: 20px;
+}
+
+.submit-login__button:hover {
+  animation: bright 6s ease infinite;
+  cursor: pointer;
+}
+
+.authAddress {
+  cursor: pointer;
+  color: blue;
+  font-size: 2em;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 18px;
+}
+
+@keyframes bright {
+  0% {
+    background-color: rgb(44, 86, 255);
+    box-shadow: 15px 15px 30px rgb(44, 86, 255);
+  }
+  30% {
+    background-color: lime;
+    box-shadow: 15px 15px 30px yellow;
+  }
+  50% {
+    background-color: limegreen;
+    box-shadow: 15px 15px 30px limegreen;
+    color: black;
+  }
+  70% {
+    background-color: green;
+    box-shadow: 15px 15px 30px green;
+  }
+  100% {
+    background-color: rgb(44, 86, 255);
+    box-shadow: 15px 15px 30px rgb(44, 86, 255);
+  }
+}
+
+@media (max-width: 720px) {
+  .auth-login__form {
+    padding: 0;
+    width: 90%;
+    padding-bottom: 5rem;
+  }
+
+  .auth-login__form > form > input[type='text'], input[type='password'] {
+    padding: 1em;
+    width: 80%;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 20px;
+  }
+
+  .submit-login__button {
+    height: fit-content;
+  }
+}
+
+

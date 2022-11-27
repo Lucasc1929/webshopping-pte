@@ -1,8 +1,8 @@
 .icon__hamburguer {
   font-size: 3rem;
   margin: 1%;
-  position: fixed;
   z-index: 2;
+  color: gray;
 }
 
 .selectedRoute {
@@ -14,19 +14,20 @@
 .showMenu {
   z-index: 1;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.852);
   padding: 10px;
-  height: 97.5vh;
+  height: 105%;
   width: 70%;
-  border-radius: 0px 3% 3% 0px;
   left: 0%;
   display: block;
+  transition-duration: 0.2s;
+
 }
 
 .anchor__component {
   position: absolute;
-  top: 40%;
+  top: 20%;
   transform: translateY(-50%);
+  margin-left: 3rem;
 }
 
 .anchor__component > a {
@@ -34,10 +35,10 @@
   font-size: 2rem;
   text-decoration: none;
   text-indent: 3%;
-  color: white;
-  font-size: 3rem;
+  color: gray;
+  font-size: 2rem;
   font-weight: 700;
-  margin-top: 33%;
+  margin-top: 50%;
   text-indent: 1rem;
 }
 
@@ -54,5 +55,6 @@
 @media (min-width: 1000px) {
   .showMenu {
     width: 25%;
+    height: 100%;
   }
 }

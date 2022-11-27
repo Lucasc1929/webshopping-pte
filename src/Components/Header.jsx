@@ -7,19 +7,19 @@ import {
   faEdit,
   faUser,
   faClose,
+  faUserPlus,
+  faPlus,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "../Styles/Header.css";
 
 function Header() {
   const [menu, setMenu] = useState(false);
-  const [path, setPath] = useState('')
+  const [path, setPath] = useState("");
 
   useEffect(() => {
-    setPath(window.location.pathname)
-  }, [])
-  
-
+    setPath(window.location.pathname);
+  }, []);
 
   return (
     <>
@@ -33,32 +33,20 @@ function Header() {
           <div
             className='anchor__component'
             style={menu ? null : { display: "none" }}>
-            <FontAwesomeIcon icon={faShop}></FontAwesomeIcon>
-            <Link
-              to={"/"}
-              className={path === "/" && "selectedRoute"}>
-              Product
-            </Link>
+            {/*<FontAwesomeIcon icon={faShop}></FontAwesomeIcon>
+            <Link to={"/"}>Produtos</Link>
             <br />
-
-            <FontAwesomeIcon icon={faEdit} />
-            <Link
-              to={"/edit"}
-              className={
-                path === "/edit" && "selectedRoute"
-              }>
-              Edit
-            </Link>
+            */}
+            <FontAwesomeIcon icon={faPlus} />
+            <Link to={"/edit"}>Criar</Link>
             <br />
 
             <FontAwesomeIcon icon={faUser} />
-            <Link
-              to={"login"}
-              className={
-                path === "/login" && "selectedRoute"
-              }>
-              Entrar
-            </Link>
+            <Link to={"/login"}>Login</Link>
+            <br />
+
+            <FontAwesomeIcon icon={faUserPlus} />
+            <Link to={"/signup"}>Registrar</Link>
           </div>
         </div>
       </div>
